@@ -107,7 +107,8 @@ public class FrmAmiga extends javax.swing.JFrame {
         // TODO add your handling code here:
         Procesa procesa = new Procesa();
         procesa.setRutacues(tcues.getText());
-        procesa.setCarpeta(ccarpeta.getToolTipText());
+        System.out.println(ccarpeta.getSelectedItem().toString());
+        procesa.setCarpeta(ccarpeta.getSelectedItem().toString());
         procesa.haz();
     }//GEN-LAST:event_jButton2ActionPerformed
 
